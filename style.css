@@ -1,0 +1,133 @@
+/* MIXINGS ***********/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* OVERLAYS */
+/* The Modal (background) */
+.modal-first-room,
+.modal-table,
+.modal-bathroom,
+.modal-first-place,
+.modal-last-place {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-first-room-content,
+.modal-table_content,
+.modal-bathroom_content,
+.modal-first-place_content,
+.modal-last-place_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #888;
+  background-color: #fefefe;
+}
+
+.modal-flex-container {
+  display: flex;
+}
+.modal-flex-container h2 {
+  flex: 1;
+}
+
+.modal-image-content {
+  flex: 1;
+}
+.modal-image-content img {
+  width: 80%;
+}
+
+/* The Close Button */
+.close-button {
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+  color: #aaaaaa;
+}
+.close-button:hover, .close-button:focus {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.desktop-content,
+.tablet-content,
+.mobile-content {
+  position: relative;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .mobile-content,
+.desktop-content {
+    display: none;
+  }
+
+  .tablet-content {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .mobile-content,
+.tablet-content {
+    display: none;
+  }
+
+  .desktop-content {
+    display: block;
+    width: 818px;
+    height: 1000px;
+  }
+
+  /*Dots */
+  .dot {
+    z-index: 20;
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: tomato;
+  }
+  .dot.first-room {
+    position: absolute;
+    top: 183px;
+    left: 61px;
+  }
+  .dot.table {
+    position: absolute;
+    bottom: 216px;
+    left: 385px;
+  }
+  .dot.bathroom {
+    position: absolute;
+    right: 50px;
+    bottom: 107px;
+  }
+  .dot.first-place {
+    position: absolute;
+    top: 359px;
+    left: 276px;
+  }
+  .dot.last-place {
+    position: absolute;
+    right: 274px;
+    bottom: 412px;
+  }
+}/*# sourceMappingURL=style.css.map */

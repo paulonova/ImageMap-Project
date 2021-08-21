@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- IMAGES -->
+  <div class="desktop-content">
+    <img src="./image/image-map819x1000.jpg" alt="Hi" usemap="#desktop">
+    <span onclick="mFirstRoom()" class="dot first-room"></span>
+    <span onclick="mTable()" class="dot table"></span>
+    <span onclick="mBathroom()" class="dot bathroom"></span>
+    <span onclick="mFirstPlace()" class="dot first-place"></span>
+    <span onclick="mLastPlace()" class="dot last-place"></span>
+  </div>
+  <div class="tablet-content">
+    <img src="./image/image-map640x781.jpg" alt="Hi" usemap="#tablet">
+    <span class="dot "></span>
+    <span class="dot "></span>
+    <span class="dot "></span>
+    <span class="dot "></span>
+    <span class="dot "></span>
+  </div>
+  <div class="mobile-content">
+    <img src="./image/image-map450x549.jpg" alt="Hi" usemap="#mobile">
+    <span class="dot "></span>
+    <span class="dot "></span>
+    <span class="dot "></span>
+    <span class="dot "></span>
+    <span class="dot "></span>
+  </div>
+
+
+
+  <!--For Mobile image-->
+  <map name="#mobile">
+
+    <area id="mobile-first-room" alt="First Room" title="First Room" coords="48,110,46" shape="circle"
+      href="javascript:mFirstRoom();" data-name="first-room">
+
+    <area id="mobile-table" class="map-2" alt="Scalibur Table" title="Scalibur Table" href="javascript:mTable();"
+      data-name="mark-table"
+      coords="190,392,162,425,171,436,194,417,217,429,233,427,242,425,250,420,256,417,268,428,275,436,288,427,257,394,223,411"
+      shape="poly">
+
+    <area id="mobile-bathroom" alt="Bathroom" title="Bathroom" href="javascript:mBathroom();" coords="372,447,439,508"
+      shape="rect">
+
+    <area id="mobile-first-place" alt="First place" title="First place" href="javascript:mFirstPlace();"
+      coords="153,203,179,225" shape="rect">
+
+    <area id=" mobile-last-place" alt="Last place" title="Last place" href="javascript:mLastPlace();"
+      coords="275,296,292,322" shape="rect">
+
+  </map>
+
+
+
+  <!--For Tablet image-->
+  <map name="tablet">
+    <area alt="First Room" title="First Room" href="javascript:mFirstRoom();" coords="17,113,115,206" shape="rect">
+
+    <area alt="Sclibur Table " title="Sclibur Table " href="javascript:mTable();"
+      coords="277,560,234,606,249,620,282,593,316,609,343,606,358,597,365,592,396,621,411,607,367,562,323,588,344,578,303,580"
+      shape="poly">
+
+    <area alt="Bathroom" title="Bathroom" href="javascript:mBathroom();" coords="526,636,627,726" shape="rect">
+
+    <area alt="First place" title="First place" href="javascript:mFirstPlace();" coords="224,292,252,315" shape="rect">
+
+    <area alt="Last place" title="Last place" href="javascript:mLastPlace();" coords="391,429,417,454" shape="rect">
+
+  </map>
+
+  <!--For Desktop image-->
+  <map name="desktop">
+    <area alt="First room" title="First room" href="javascript:mFirstRoom();" coords="23,147,150,265" shape="rect">
+    <area alt="The Table" title="The Table" href="javascript:mTable();"
+      coords="352,718,295,777,315,795,356,758,403,779,444,773,457,763,465,757,503,794,524,777,468,718,432,749,397,752"
+      shape="poly">
+    <area alt="The Bathroom" title="The Bathroom" href="javascript:mBathroom();" coords="676,815,802,929" shape="rect">
+    <area alt="The first one" title="The first one" href="javascript:mFirstPlace();" coords="286,374,322,404"
+      shape="rect">
+    <area alt="The Last one" title="The Last one" href="javascript:mLastPlace();" coords="498,553,533,579" shape="rect">
+  </map>
+
+
+  <!-- The Modals -->
+
+
+  <!-- First Room -->
+  <section id="modal-first-room" class="modal-first-room">
+    <!-- Modal content -->
+    <div class="modal-first-room-content">
+      <span id="modal-room" class="close-button">&times;</span>
+
+      <div class="modal-content">
+        <div class="modal-flex-container">
+          <div class="modal-image-content">
+            <img src="./image/opera-image.jpg" alt="opera">
+          </div>
+          <h2>First Room Popup</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque
+          sodales ut etiam sit amet. Eu sem integer vitae justo eget magna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scalibur Table-->
+  <section id="modal-table" class="modal-table">
+    <div class="modal-table_content">
+      <span id="modal-table_close" class="close-button">&times;</span>
+
+      <div class="modal-content">
+        <div class="modal-flex-container">
+          <div class="modal-image-content">
+            <img src="./image/opera-band.jpg" alt="band">
+          </div>
+          <h2>Table Popup</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque
+          sodales ut etiam sit amet. Eu sem integer vitae justo eget magna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bathroom -->
+  <section id="modal-bathroom" class="modal-bathroom">
+    <div class="modal-bathroom_content">
+      <span id="modal-bathroom_close" class="close-button">&times;</span>
+
+      <div class="modal-content">
+        <div class="modal-flex-container">
+          <div class="modal-image-content">
+            <img src="./image/opera-band.jpg" alt="band">
+          </div>
+          <h2>Bathroom Popup</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque
+          sodales ut etiam sit amet. Eu sem integer vitae justo eget magna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- First Palce -->
+  <section id="modal-first-place" class="modal-first-place">
+    <div class="modal-first-place_content">
+      <span id="modal-first-place_close" class="close-button">&times;</span>
+
+      <div class="modal-content">
+        <div class="modal-flex-container">
+          <div class="modal-image-content">
+            <img src="./image/opera-image.jpg" alt="opera">
+          </div>
+          <h2>First Place Popup</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque
+          sodales ut etiam sit amet. Eu sem integer vitae justo eget magna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Last Palce -->
+  <section id="modal-last-place" class="modal-last-place">
+    <div class="modal-last-place_content">
+      <span id="modal-last-place_close" class="close-button">&times;</span>
+
+      <div class="modal-content">
+        <div class="modal-flex-container">
+          <div class="modal-image-content">
+            <img src="./image/opera-band.jpg" alt="band">
+          </div>
+          <h2>Last Place Popup</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Tincidunt arcu non sodales neque
+          sodales ut etiam sit amet. Eu sem integer vitae justo eget magna.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
