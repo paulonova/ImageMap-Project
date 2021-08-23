@@ -38,6 +38,15 @@ body {
   border: 1px solid #888;
   background-color: #fefefe;
 }
+@media (min-width: 768px) {
+  .modal-first-room-content,
+.modal-table_content,
+.modal-bathroom_content,
+.modal-first-place_content,
+.modal-last-place_content {
+    width: 50%;
+  }
+}
 
 .modal-flex-container {
   display: flex;
@@ -67,7 +76,12 @@ body {
 }
 
 .desktop-content,
-.tablet-content,
+.tablet-content {
+  position: relative;
+  display: none;
+  width: auto;
+}
+
 .mobile-content {
   position: relative;
   width: auto;

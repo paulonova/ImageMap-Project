@@ -25,6 +25,10 @@
   transform: translate(-50%, -50%);
   border: 1px solid #888;
   background-color: #fefefe;
+
+  @media(min-width: 768px){
+    width: 50%;
+  }
 }
 
 body{
@@ -84,7 +88,12 @@ body{
 }
 
 .desktop-content,
-.tablet-content,
+.tablet-content{
+  position: relative;
+  display: none;
+  width: auto;
+}
+
 .mobile-content{
   position: relative;
   width: auto;
@@ -110,6 +119,7 @@ body{
     display: none;
   }
 
+  // to set the dots more easy to place over the image..
   .desktop-content {
     display: block;
     width: 818px;
